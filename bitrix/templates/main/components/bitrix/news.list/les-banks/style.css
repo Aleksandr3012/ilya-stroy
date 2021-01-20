@@ -1,0 +1,30 @@
+.banks-slider{
+	justify-content:center;
+}
+.banks-slider .banks-item{
+	display:block;
+	max-width:150px;
+	position:relative;
+	background:center center no-repeat;
+	background-size:80%;
+	margin-bottom:15px;
+}
+.banks-slider .banks-item:before{
+	content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    padding-top: 40%;
+}
+@media (min-width:768px){
+	.banks-slider .banks-item{
+		max-width:unset;
+		transition:0.3s ease-in-out;
+		filter:grayscale(1);
+	}
+	.banks-slider .banks-item:hover,
+	.banks-slider .banks-item:focus{
+		filter:grayscale(0);
+	}
+}

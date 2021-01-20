@@ -1,0 +1,146 @@
+.hidden {
+    display: none;
+}
+
+#sidebar .current {
+    font-weight: 700;
+}
+
+/* sidebar */
+
+#faq #sidebar {
+    background: #eee0d0;
+    overflow-y: scroll;
+}
+
+#faq h1 {
+    margin-bottom: 10px;
+}
+
+/* ul */
+
+#sidebar ul {
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+}
+
+#sidebar ul li {
+    line-height: 30px;
+}
+
+#sidebar ul li a {
+    /*display: block;*/
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+#sidebar ul.menu {
+    margin-top: 30px;
+}
+
+#sidebar ul.menu-elements {
+    padding-left: 20px;
+}
+
+#sidebar ul li a:hover {
+    color: #5baa00;
+}
+
+/* right */
+
+#faq #content {
+    padding-left: 30px;
+}
+
+#content h1 {
+    color: #5baa00;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+#content p {
+    color: #525354;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#content ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+#content ul li {
+    line-height: 27px;
+}
+
+#content ul li::before {
+    content: "\2022";
+    color: #5baa00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#content ol {
+    list-style: none;
+}
+
+#content ol li {
+    counter-increment: li;
+    line-height: 27px;
+}
+
+#content ol li::before {
+    content: counter(li);
+    color: #5baa00;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 700;
+}
+
+#content blockquote {
+    position: relative;
+    background-color: rgba(91, 170, 0, 0.1);
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    padding: 25px;
+    font-weight: 700;
+}
+
+#content blockquote:before {
+    position: absolute;
+    content: url('https://www.ilya-stroy.ru/bitrix/templates/main/css/icons/quote-icon.png');
+    right: 25px;
+    top: -15px;
+}
+
+#content .spoiler-title {
+    color: #5baa00 !important;
+}
+
+/* Стрелки */
+
+.arrow-right {
+    display: inline-block;
+    background-image: url('https://www.ilya-stroy.ru/bitrix/templates/main/css/icons/arrow-right.png');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.arrow-down {
+    display: inline-block;
+    background-image: url('https://www.ilya-stroy.ru/bitrix/templates/main/css/icons/arrow-down.png');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 10px;
+    margin-right: 6px;
+}
