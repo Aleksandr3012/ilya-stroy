@@ -60,6 +60,18 @@
 			font-size: 2.5rem;
 		}
 	}
+
+	.txt-green {
+		color: #5baa00;
+	}
+
+	.slider-sect .slide .slide-content {
+		max-width: 90%;
+	}
+
+	.ttu {
+		text-transform: uppercase;
+	}
 }
 
 //project-card page start
@@ -701,3 +713,199 @@
 	}
 	
 }// shares page end
+
+// mortgage page start
+.sAdvantages {
+	padding-top: 45px;
+	padding-bottom: 40px;
+	@media (min-width: 992px) {
+		padding-top: 88px;
+		padding-bottom: 80px;
+	}
+
+	.row {
+		@include roww(10px);
+		@media (min-width: 992px) {
+			@include roww(24px);
+		}
+		justify-content: center;
+	}
+
+	&__item {
+		border: 5px solid #eee0d0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 90px;
+		height: calc(100% - 90px);
+		padding: 0 20px 10px;
+	} 
+
+	&__imgWrap {
+		background-color: #fff;
+		position: relative;
+		z-index: 2;
+		margin-top: -80px;
+		padding: 30px 30px 20px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	p {
+		line-height: calc(23/15);
+	}
+}
+
+.sProgram {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	h3 {
+		line-height: calc(41/28);
+		margin-bottom: 1.9rem;
+		@media (max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+
+	&__imgWrap {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			bottom: -67px;
+			left: 0px;
+		}
+	}
+
+	&__btn {
+		padding: 17px 37px;
+	}
+}
+
+.tabs {
+	&__btn {
+		border: 1px solid #eee0d0;
+		margin-bottom: 30px;
+		padding: 35px 20px 34px 32px;
+		&:hover {
+			cursor: pointer;
+		}
+
+		&.active {
+			border-color: #5baa00;
+		}
+	}
+
+	&__content {
+		box-shadow: 2px 4px 35px rgba(71, 71, 71, 0.18);
+		background-color: #ffffff;
+		padding: 10px;
+		@media (min-width: 768px) {
+			padding: 20px 31px 20px 33px;
+		}
+		@media (min-width: 992px) {
+			&.active {
+				display: block;
+			}
+			display: none;
+		}
+
+		@media (max-width: 992px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__row {
+		@include roww(21px);
+	}
+
+	&__col {
+		@media (min-width: 992px) {
+			max-width: 47%;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		color: #5baa00;
+		font-size: 19px;
+		text-transform: uppercase;
+		margin-bottom: .5rem;
+	}
+
+	&__bank {
+		font-size: 15px;
+		font-weight: 300;
+		color: #38302e;
+		margin-bottom: 1.4rem;
+	}
+
+	&__rate {
+		background-color: #eee0d0;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: 300;
+		text-align: center;
+		min-width: 164px;
+		display: inline-block;
+	}
+}
+
+.sMortgage {
+	padding-top: 50px;
+	@media (min-width: 992px) {
+		padding-top: 100px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		color: #312626;
+		margin-bottom: 30px;
+		line-height: calc(33/24);
+	}
+
+	&__subtitle {
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	&__rate {
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			position: relative;
+			padding-left: 16px;
+			line-height: calc(26/15);
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 11px;
+				width: 7px;
+				height: 7px;
+				background-color: #e3d6c6;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	ol {
+		padding-left: 16px;
+	}
+}// mortgage page end
