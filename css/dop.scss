@@ -807,7 +807,7 @@
 	&__content {
 		box-shadow: 2px 4px 35px rgba(71, 71, 71, 0.18);
 		background-color: #ffffff;
-		padding: 10px;
+		padding: 15px;
 		@media (min-width: 768px) {
 			padding: 20px 31px 20px 33px;
 		}
@@ -878,7 +878,10 @@
 	}
 
 	&__title {
-		font-size: 24px;
+		font-size: 20px;
+		@media (min-width: 768px) {
+			font-size: 24px;
+		}
 		font-weight: 700;
 		color: #312626;
 		margin-bottom: 30px;
